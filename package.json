@@ -1,0 +1,10 @@
+{
+  "name": "invlid-tools",
+  "version": "0.0.0",
+  "repository": "https://github.com/invliD/tools.git",
+  "author": "invliD <code@nik.dev>",
+  "license": "AGPL-3.0-only",
+  "scripts": {
+    "build": "echo Success"
+  }
+}
