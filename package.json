@@ -6,9 +6,11 @@
   "license": "AGPL-3.0-only",
   "scripts": {
     "build": "webpack",
+    "dist": "NODE_ENV=production webpack",
     "lint": "ts-lint"
   },
   "devDependencies": {
+    "@blueprintjs/core": "^3.18.0",
     "@blueprintjs/node-build-scripts": "^0.11.0",
     "@blueprintjs/tslint-config": "^1.9.0",
     "@blueprintjs/webpack-build-scripts": "^0.9.0",

@@ -12,15 +12,15 @@ jobs:
           root: '.'
           paths:
             - node_modules
-  build:
+  dist:
     docker:
       - image: circleci/node:lts
     steps:
       - checkout
       - attach_workspace: { at: '.' }
       - run:
-          name: Build
-          command: yarn build
+          name: Build distribution
+          command: yarn dist
   lint:
     docker:
       - image: circleci/node:lts
@@ -43,7 +43,7 @@ workflows:
   launch:
     jobs:
       - checkout-code
-      - build:
+      - dist:
           requires: [checkout-code]
       - lint:
           requires: [checkout-code]
