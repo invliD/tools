@@ -6,6 +6,7 @@
   "license": "AGPL-3.0-only",
   "scripts": {
     "build": "webpack",
+    "dist": "NODE_ENV=production webpack",
     "lint": "ts-lint"
   },
   "devDependencies": {
@@ -19,6 +20,7 @@
     "webpack-cli": "^3.3.6"
   },
   "dependencies": {
+    "@blueprintjs/core": "^3.18.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "tslib": "~1.10.0"
