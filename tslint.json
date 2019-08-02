@@ -1,0 +1,4 @@
+{
+	"extends": "@blueprintjs/tslint-config",
+	"rules": {}
+}

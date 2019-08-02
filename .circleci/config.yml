@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build:
+  checkout-code:
     docker:
       - image: circleci/node:lts
     steps:
@@ -8,6 +8,42 @@ jobs:
       - run:
           name: Install dependencies
           command: yarn install --frozen-lockfile
+      - persist_to_workspace:
+          root: '.'
+          paths:
+            - node_modules
+  build:
+    docker:
+      - image: circleci/node:lts
+    steps:
+      - checkout
+      - attach_workspace: { at: '.' }
       - run:
           name: Build
           command: yarn build
+  lint:
+    docker:
+      - image: circleci/node:lts
+    environment:
+      JUNIT_REPORT_PATH: ../../reports
+    steps:
+      - checkout
+      - attach_workspace: { at: '.' }
+      - run:
+          name: Prepare reports
+          command: mkdir -p ~/reports/tslint
+      - run:
+          name: Lint
+          command: yarn lint
+      - store_test_results:
+          path: ~/reports
+
+workflows:
+  version: 2
+  launch:
+    jobs:
+      - checkout-code
+      - build:
+          requires: [checkout-code]
+      - lint:
+          requires: [checkout-code]
