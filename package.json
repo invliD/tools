@@ -5,17 +5,22 @@
   "author": "invliD <code@nik.dev>",
   "license": "AGPL-3.0-only",
   "scripts": {
-    "build": "tsc -p src",
+    "build": "webpack",
     "lint": "ts-lint"
   },
   "devDependencies": {
     "@blueprintjs/node-build-scripts": "^0.11.0",
     "@blueprintjs/tslint-config": "^1.9.0",
+    "@blueprintjs/webpack-build-scripts": "^0.9.0",
     "@types/react": "^16.8.24",
-    "typescript": "~3.5.3"
+    "@types/react-dom": "^16.8.5",
+    "html-webpack-plugin": "^3.2.0",
+    "typescript": "~3.5.3",
+    "webpack-cli": "^3.3.6"
   },
   "dependencies": {
     "react": "^16.8.6",
+    "react-dom": "^16.8.6",
     "tslib": "~1.10.0"
   }
 }
