@@ -168,6 +168,15 @@
     tslint "^5.18.0"
     typescript "~3.5.3"
 
+"@blueprintjs/select@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@blueprintjs/select/-/select-3.10.0.tgz#e5711a25416e62d236afb8a3062af45b3b4206ef"
+  integrity sha512-Akm/L5tndrOUuf05od9IJ0WSQgHdbJ4/i2RRoLLH5ZiI8s1OZiCbKJYDSCbCOTviCdZSuL0qkJsBcYhOI/Czeg==
+  dependencies:
+    "@blueprintjs/core" "^3.18.0"
+    classnames "^2.2"
+    tslib "~1.9.0"
+
 "@blueprintjs/tslint-config@^1.9.0":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@blueprintjs/tslint-config/-/tslint-config-1.9.0.tgz#86479b76cb84633c8a28934dfaab1ce168f1c4b8"

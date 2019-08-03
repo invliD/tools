@@ -12,5 +12,11 @@ body {
 #tools-entry {
 	display: flex;
 	height: 100%;
-	margin-top: $pt-navbar-height;
+	padding-top: $pt-navbar-height;
+}
+
+.content {
+	display: flex;
+	flex: 1;
+	overflow-y: auto;
 }

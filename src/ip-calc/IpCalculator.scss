@@ -1,0 +1,23 @@
+@import "~@blueprintjs/core/lib/scss/variables";
+
+.ipc-container {
+	margin: 0 auto;
+	padding-top: 10px;
+	flex: 0 1 400px;
+}
+
+.ipc-row {
+	display: flex;
+}
+
+.ipc-cell {
+	flex: 1 1 0;
+	padding: 0 10px;
+}
+
+.ipc-text-content {
+	display: flex;
+	align-items: center;
+	height: $pt-button-height;
+	padding: 0 10px;
+}
