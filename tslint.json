@@ -2,13 +2,13 @@
 	"extends": "@blueprintjs/tslint-config",
 	"rules": {
 		"no-bitwise": false,
-        "prettier": {
-            "options": {
-                "printWidth": 120,
-                "tabWidth": 4,
+		"prettier": {
+			"options": {
+				"printWidth": 120,
+				"tabWidth": 4,
 				"trailingComma": "all",
 				"useTabs": true
-            }
+			}
 		}
 	}
 }
