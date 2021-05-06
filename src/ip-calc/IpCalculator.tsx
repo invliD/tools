@@ -12,7 +12,7 @@ interface IIpCalculatorState {
 	subnet: ISubnet;
 }
 
-export class IpCalculator extends React.PureComponent<{}, IIpCalculatorState> {
+export class IpCalculator extends React.PureComponent<Record<string, never>, IIpCalculatorState> {
 	public state: IIpCalculatorState = {
 		ipAddress: "10.0.0.1",
 		subnet: SUBNETS[23],
