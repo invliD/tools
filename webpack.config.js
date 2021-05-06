@@ -20,10 +20,12 @@ const cssLoaders = [
     {
         loader: require.resolve("postcss-loader"),
         options: {
-            plugins: [
-                require("autoprefixer"),
-                require("cssnano")({ preset: "default" }),
-            ],
+            postcssOptions: {
+                plugins: [
+                    require("autoprefixer"),
+                    require("cssnano")({ preset: "default" }),
+                ],
+            },
         },
     },
 ];
