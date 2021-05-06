@@ -30,6 +30,7 @@
   "dependencies": {
     "@blueprintjs/core": "^3.44.2",
     "@blueprintjs/select": "^3.16.2",
+    "normalize.css": "^8.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "tslib": "~1.13.0"
