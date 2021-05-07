@@ -83,6 +83,7 @@ export class SubnetSelect extends React.PureComponent<ISubnetSelectProps, ISubne
 			>
 				<Button
 					className="ipc-subnet-select"
+					fill={true}
 					id={this.props.id}
 					rightIcon="caret-down"
 					text={this.visual.render(this.props.value)}
