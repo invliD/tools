@@ -2,6 +2,7 @@ const path = require("path");
 
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 
 const { baseConfig } = require("@blueprintjs/webpack-build-scripts");
 
@@ -52,6 +53,10 @@ module.exports = Object.assign({}, baseConfig, {
 		...baseConfig.plugins,
 		new HtmlWebpackPlugin({
 			title: "invliD Tools",
+		}),
+		new BundleAnalyzerPlugin({
+			analyzerMode: "static",
+			reportFilename: path.resolve(__dirname, "./build/report.html"),
 		}),
 	],
 });
