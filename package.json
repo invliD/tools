@@ -28,8 +28,9 @@
     "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "@blueprintjs/core": "^3.44.2",
-    "@blueprintjs/select": "^3.16.2",
+    "@blueprintjs/core": "^4.0.0-alpha.0",
+    "@blueprintjs/icons": "^4.0.0-alpha.0",
+    "@blueprintjs/select": "^4.0.0-alpha.0",
     "normalize.css": "^8.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",

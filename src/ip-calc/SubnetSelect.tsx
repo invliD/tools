@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import { Button, Classes, MenuItem } from "@blueprintjs/core";
+import { CaretDown } from "@blueprintjs/icons";
 import { ItemRenderer, Select } from "@blueprintjs/select";
 
 import { ISubnet, numToIp, SUBNETS } from "./subnets";
@@ -76,7 +77,6 @@ export class SubnetSelect extends React.PureComponent<ISubnetSelectProps, ISubne
 					minimal: true,
 					onOpening: this.handlePopoverOpening,
 					targetTagName: "div",
-					wrapperTagName: "div",
 				}}
 				query={this.state.query}
 				resetOnQuery={false}
@@ -85,7 +85,7 @@ export class SubnetSelect extends React.PureComponent<ISubnetSelectProps, ISubne
 					className="ipc-subnet-select"
 					fill={true}
 					id={this.props.id}
-					rightIcon="caret-down"
+					rightIcon={<CaretDown />}
 					text={this.visual.render(this.props.value)}
 				/>
 			</Select>
